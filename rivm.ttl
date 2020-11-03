@@ -1,0 +1,33 @@
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<https://rivm.nl/rivm.ttl#rivm> a foaf:Organization, vcard:Organization, org:FormalOrganization;
+    dct:identifier <https://rivm.nl/rivm.ttl#rivm>;
+    dct:identifier <https://www.wikidata.org/wiki/Q1055186>;
+    dct:identifier <http://viaf.org/viaf/171612732>;
+    dct:identifier <https://isni.org/isni/0000000122080118>;
+    skos:prefLabel "Rijksinstituut voor Volksgezondheid en Milieu"@nl;
+    skos:prefLabel "Netherlands National Institute for Public Health and the Environment"@en;
+    skos:altLabel "RIVM";
+    foaf:name "Rijksinstituut voor Volksgezondheid en Milieu"@nl;
+    foaf:name "Netherlands National Institute for Public Health and the Environment"@en;
+    foaf:homepage <https://www.rivm.nl/>;
+    foaf:mbox <mailto:info@rivm.nl>;
+    foaf:phone <tel:0031302749111>;
+    org:hasPrimarySite <https://rivm.nl/rivm.ttl#bilthovensite>;
+    vcard:hasAddress <https://rivm.nl/rivm.ttl#bilthovenaddress>;
+    vcard:hasEmail <mailto:info@rivm.nl>.
+
+<https://rivm.nl/rivm.ttl#bilthovensite> a org:Site;
+    org:siteOf <https://rivm.nl/rivm.ttl#rivm> ;
+    org:siteAddress <https://rivm.nl/rivm.ttl#bilthovenaddress>.
+
+<https://rivm.nl/rivm.ttl#bilthovenaddress> a vcard:Address;
+    vcard:street-address "Antonie van Leeuwenhoeklaan 9" ;
+    vcard:locality "Bilthoven" ;
+    vcard:postal-code "3721 MA" ;
+    vcard:country-name "Nederlands"@nl ;
+    vcard:country-name "The Netherlands"@en .
